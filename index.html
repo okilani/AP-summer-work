@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Swimming FINA Points Calculator</title>
+</head>
+<body>
+    <h1>Swimming FINA Points Calculator</h1>
+    <form>
+        <label for="event">Select Event:</label>
+        <select id="event">
+            <option value="50">50m</option>
+            <option value="100">100m</option>
+            <option value="200">200m</option>
+            <!-- Add more event options as needed -->
+        </select><br>
+
+        <label for="time">Enter Time:</label>
+        <input type="number" id="time" step="0.01" required><br>
+
+        <label for="Stroke">Select Stroke:</label>
+        <select id="stroke">
+            <option value="Freestyle">Freestyle</option>
+            <option value="Backstroke">Backstroke</option>
+            <option value="Breaststroke">Breaststroke</option>
+            <option value="Butterfly">Butterfly</option>
+            <!-- Add more event options as needed -->
+        </select><br>
+
+        <label for="gender">Select Gender:</label>
+        <select id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br>
+
+        <button type="button" onclick="calculateFINAPoints()">Calculate FINA Points</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+        function calculateFINAPoints() {
+            // Implement the calculation logic here based on the selected event, time, age, and gender
+            // You'll need to use JavaScript to calculate the FINA points
+            // Once you have the result, display it in the "result" div
+
+            // Example calculation (just a placeholder):
+            var event = parseInt(document.getElementById("event").value);
+            var time = parseFloat(document.getElementById("time").value);
+            var age = parseInt(document.getElementById("age").value);
+            var gender = document.getElementById("gender").value;
+
+            var finaPoints = 1000; // Replace this with the actual calculation
+
+            document.getElementById("result").innerHTML = "FINA Points: " + finaPoints;
+        }
+    </script>
+</body>
+</html>
