@@ -32,6 +32,12 @@
             <option value="female">Female</option>
         </select><br>
 
+        <label for="pool">Select Pool:</label>
+        <select id="pool">
+            <option value="LCM">LCM</option>
+            <option value="SCM">SCM</option>
+        </select><br>
+
         <button type="button" onclick="calculateFINAPoints()">Calculate FINA Points</button>
     </form>
 
@@ -49,10 +55,10 @@
             var age = parseInt(document.getElementById("age").value);
             var gender = document.getElementById("gender").value;
 
-            var finaPoints = 1000; // Replace this with the actual calculation
+            var finaPoints = 1000; P = 1000 * ( B / T )3
 
             document.getElementById("result").innerHTML = "FINA Points: " + finaPoints;
-        }
-    </script>
+
+
 </body>
 </html>
