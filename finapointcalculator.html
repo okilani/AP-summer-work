@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Swimming FINA Points Calculator</title>
+</head>
+<body>
+    <li><a href="index.html">Home Page</a></li>
+    <h1>Swimming FINA Points Calculator</h1>
+    <form>
+        <label for="event">Select Event:</label>
+        <select id="event">
+            <option value="50 free">50m Freestyle</option>
+            <option value="100 free">100m Freestyle</option>
+            <option value="200 free">200m Freestyle</option>
+            <option value="400 free">400m Freestyle</option>
+            <option value="800 free">800m Freestyle</option>
+            <option value="1500 free">1500m Freestyle</option>
+            <option value="50 fly">50m Butterfly</option>
+            <option value="100 fly">100m Butterfly</option>
+            <option value="200 fly">200m Butterfly</option>
+            <option value="50 back">50m Backstroke</option>
+            <option value="100 back">100m Backstroke</option>
+            <option value="200 back">200m Backstroke</option>
+            <option value="50 breast">50m Breaststroke </option>
+            <option value="100 breast">100m Breaststroke</option>
+            <option value="200 breast">200m Breaststroke</option>
+            <option value="200 IM">200m Individual Medley</option>
+            <option value="400 IM">400m Individual Medley</option>
+        </select><br>
+
+        <label for="baseTime">Enter Time for 1000 Points (in seconds):</label>
+        <input type="number" id="baseTime" step="0.01" required><br>
+
+        <label for="gender">Select Gender:</label>
+        <select id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br>
+
+        <label for="course">Select Course:</label>
+        <select id="course">
+            <option value="short">Short Course</option>
+            <option value="long">Long Course</option>
+        </select><br>
+
+        <button type="button" onclick="calculateFINAPoints()">Calculate FINA Points</button>
+    </form>
+</body>
+</html>
